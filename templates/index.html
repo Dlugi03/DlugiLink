@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Dlugi Link</title>
+</head>
+<body>
+    <h1>DLUGI LINK</h1> <br />
+    <form method="post" action="/generated/">{% csrf_token %}
+        <label for="link-text">Link</label><br />
+        <input type="text" name="link-text" value="{{ link }}" maxlength="200" required><br />
+        <input type="submit" id="link-submit" value="Submit"><br />
+    </form>
+    <br /><br />
+</body>
+</html>
